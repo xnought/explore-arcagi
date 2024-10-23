@@ -55,6 +55,9 @@
 <main style="display: flex; gap: 10px;">
 	{#if falcon}
 		<div>
+			<div>
+				Total count: <i style:color="crimson">{totalCountValue}</i>
+			</div>
 			{#each specs as spec}
 				<div>
 					<Histogram
@@ -69,7 +72,20 @@
 				</div>
 			{/each}
 			<div>
-				Total count: <i style:color="crimson">{totalCountValue}</i>
+				<!-- <div>
+					<Binary
+						{falcon}
+						binaryLabels={["Examples", "Test"]}
+						spec={{ type: "categorical", name: "evidence_str" }}
+					/>
+				</div> -->
+				<!-- <div style="margin-top: 20px;">
+					<Binary
+						{falcon}
+						binaryLabels={["Train", "Evaluation"]}
+						spec={{ type: "categorical", name: "eval_set_str" }}
+					/>
+				</div> -->
 			</div>
 		</div>
 		<div
