@@ -17,7 +17,8 @@
 		entryResolved = true;
 	});
 
-	const numEntries = 50;
+	const numEntries = 12;
+	let growingEntries = numEntries;
 	const resolution = 300;
 	const bins = 20;
 	const fields = [
@@ -34,6 +35,21 @@
 		resolution,
 		bins,
 	}));
+
+	function fillTable(length, offset) {
+		if (entryResolved) {
+			entryResolved = false;
+			falcon
+				.entries({
+					length,
+					offset,
+				})
+				.then((d) => {
+					entries = d;
+					entryResolved = true;
+				});
+		}
+	}
 </script>
 
 <main style="display: flex; gap: 10px;">
@@ -45,19 +61,9 @@
 						{falcon}
 						{spec}
 						title={spec.name}
-						on:change={async () => {
-							if (entryResolved) {
-								entryResolved = false;
-								falcon
-									.entries({
-										length: numEntries,
-										offset: 0,
-									})
-									.then((d) => {
-										entries = d;
-										entryResolved = true;
-									});
-							}
+						on:change={() => {
+							fillTable(numEntries, 0);
+							growingEntries = numEntries;
 						}}
 					/>
 				</div>
@@ -71,7 +77,9 @@
 		>
 			{#if entries}
 				{#each Array.from(entries) as data}
-					<ArcData {data} {fields} />
+					{#key `${data["id"]}-${data["example"]}`}
+						<ArcData {data} {fields} />
+					{/key}
 				{:else}
 					No data
 				{/each}
@@ -79,6 +87,18 @@
 		</div>
 	{/if}
 </main>
+{#if entries}
+	<div style="display: flex; justify-content: center;">
+		<div>
+			<button
+				on:click={() => {
+					growingEntries += 100;
+					fillTable(growingEntries, 0);
+				}}>Click to show more</button
+			>
+		</div>
+	</div>
+{/if}
 
 <style>
 	main {
