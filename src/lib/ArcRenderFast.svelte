@@ -36,7 +36,7 @@
 				const c = Number(v[j]);
 				if (c !== 0) {
 					ctx.fillStyle = colors[c];
-					ctx.fillRect(i * square, j * square, square, square);
+					ctx.fillRect(j * square, i * square, square, square);
 				}
 			}
 		}
