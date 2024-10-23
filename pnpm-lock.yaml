@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@uwdata/vgplot':
-        specifier: ^0.11.0
-        version: 0.11.0
       falcon-vis:
         specifier: ^0.17.4
         version: 0.17.4
@@ -198,10 +195,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@observablehq/plot@0.6.16':
-    resolution: {integrity: sha512-LRi9Rn93yUx90MIo2Md7+vazxO3Wiat14but2ttCER0xVS+jnfoUjuCGoz6H7bz/lgI9CFcW0HWlvWjMFjAv8g==}
-    engines: {node: '>=12'}
-
   '@rollup/rollup-android-arm-eabi@4.24.0':
     resolution: {integrity: sha512-Q6HJd7Y6xdB48x8ZNVDOqsbh2uByBhgK8PiQgPhwkIw/HC/YX5Ghq2mQY5sRMZWHb3VsFkWooUVOZHKr7DmDIA==}
     cpu: [arm]
@@ -327,24 +320,6 @@ packages:
   '@types/pad-left@2.1.1':
     resolution: {integrity: sha512-Xd22WCRBydkGSApl5Bw0PhAOHKSVjNL3E3AwzKaps96IMraPqy5BvZIsBVK6JLwdybUzjHnuWVwpDd0JjTfHXA==}
 
-  '@uwdata/flechette@1.1.0':
-    resolution: {integrity: sha512-UG25ytXRsElGDSIsvCuEUUkX/XImdKe7jnZF2Y5Q9uYYQH6WO60F7yLJ/sNRBJqHdn4A0QhTAOuOJevDZZcF8Q==}
-
-  '@uwdata/mosaic-core@0.11.0':
-    resolution: {integrity: sha512-0bW7zl90EXqZoUfIJCrytjeY5KNjZWoYN1of1M0fJ0A+7cxlh08iLTi9XRaptPmL6teIOpOthVV747422BYVcQ==}
-
-  '@uwdata/mosaic-inputs@0.11.0':
-    resolution: {integrity: sha512-Ilj8ZrGejddNzF39pU5kM/y6liyhfoJwDf/2jErj3rsDzMedfqSZNmQR4ftBGGj9w3Q1mfZ1tRxXwgSUzSjpOg==}
-
-  '@uwdata/mosaic-plot@0.11.0':
-    resolution: {integrity: sha512-WcIvrHqg5brlT8SPV3qFNsjaRI14govLsMrrmjTRA/uofb6kRmvFiNbNn/9+7VRReGzeB0wMiX2bvAriRAdIzA==}
-
-  '@uwdata/mosaic-sql@0.11.0':
-    resolution: {integrity: sha512-q2uDGxsfhhXkJYo1CXyo0RdyWsYUsHrwe+9FORfyGuxfU4+0KxhFRQn5njQm4hEejQhGoqvPbvcQxR9g6PnS+w==}
-
-  '@uwdata/vgplot@0.11.0':
-    resolution: {integrity: sha512-/7SE75UV1aNx6xMnA5m1bB0knYUdqUsxI/BQYeOZkzb3o40UGM/qMX5Fag1ystPzsVdWZBaDvIclNW2MQZ9NJw==}
-
   acorn-typescript@1.4.13:
     resolution: {integrity: sha512-xsc9Xv0xlVfwp2o7sQ+GCQ1PgbkdcpWdTzrwXxO3xDMTAywVS3oXVOcOHuRjAPkS4P9b+yc/qNF15460v+jp4Q==}
     peerDependencies:
@@ -416,9 +391,6 @@ packages:
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
-
-  binary-search-bounds@2.0.5:
-    resolution: {integrity: sha512-H0ea4Fd3lS1+sTEB2TgcLoK21lLhwEJzlQv3IN47pJS976Gx4zoWe0ak3q+uYh60ppQxg9F16Ri4tS1sfD4+jA==}
 
   bit-twiddle@1.0.2:
     resolution: {integrity: sha512-B9UhK0DKFZhoTFcfvAzhqsjStvGJp9vYWf3+6SNTtdSQnvIgfkHbgHrg/e4+TH71N2GDu8tpmCVoyfrL1d7ntA==}
@@ -797,9 +769,6 @@ packages:
     resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
     engines: {node: '>=12'}
 
-  interval-tree-1d@1.0.4:
-    resolution: {integrity: sha512-wY8QJH+6wNI0uh4pDQzMvl+478Qh7Rl4qLmqiluxALlNvl+I+o5x38Pw3/z7mDPTPS1dQalZJXsmbvxx5gclhQ==}
-
   iota-array@1.0.0:
     resolution: {integrity: sha512-pZ2xT+LOHckCatGQ3DcG/a+QuEqvoxqkiL7tvE8nn3uuu+f6i1TtpB5/FtWFbxUuVr5PZCx8KskuGatbJDXOWA==}
 
@@ -821,9 +790,6 @@ packages:
 
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
-
-  isoformat@0.2.1:
-    resolution: {integrity: sha512-tFLRAygk9NqrRPhJSnNGh7g7oaVWDwR0wKh/GM2LgmPa50Eg4UfyaCO4I8k6EqJHl1/uh2RAD6g06n5ygEnrjQ==}
 
   isomorphic-ws@4.0.1:
     resolution: {integrity: sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==}
@@ -1451,12 +1417,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@observablehq/plot@0.6.16':
-    dependencies:
-      d3: 7.9.0
-      interval-tree-1d: 1.0.4
-      isoformat: 0.2.1
-
   '@rollup/rollup-android-arm-eabi@4.24.0':
     optional: true
 
@@ -1551,37 +1511,6 @@ snapshots:
 
   '@types/pad-left@2.1.1': {}
 
-  '@uwdata/flechette@1.1.0': {}
-
-  '@uwdata/mosaic-core@0.11.0':
-    dependencies:
-      '@duckdb/duckdb-wasm': 1.29.0
-      '@uwdata/flechette': 1.1.0
-      '@uwdata/mosaic-sql': 0.11.0
-
-  '@uwdata/mosaic-inputs@0.11.0':
-    dependencies:
-      '@uwdata/mosaic-core': 0.11.0
-      '@uwdata/mosaic-sql': 0.11.0
-      isoformat: 0.2.1
-
-  '@uwdata/mosaic-plot@0.11.0':
-    dependencies:
-      '@observablehq/plot': 0.6.16
-      '@uwdata/mosaic-core': 0.11.0
-      '@uwdata/mosaic-sql': 0.11.0
-      d3: 7.9.0
-      isoformat: 0.2.1
-
-  '@uwdata/mosaic-sql@0.11.0': {}
-
-  '@uwdata/vgplot@0.11.0':
-    dependencies:
-      '@uwdata/mosaic-core': 0.11.0
-      '@uwdata/mosaic-inputs': 0.11.0
-      '@uwdata/mosaic-plot': 0.11.0
-      '@uwdata/mosaic-sql': 0.11.0
-
   acorn-typescript@1.4.13(acorn@8.13.0):
     dependencies:
       acorn: 8.13.0
@@ -1654,8 +1583,6 @@ snapshots:
   async-limiter@1.0.1: {}
 
   axobject-query@4.1.0: {}
-
-  binary-search-bounds@2.0.5: {}
 
   bit-twiddle@1.0.2: {}
 
@@ -2072,10 +1999,6 @@ snapshots:
 
   internmap@2.0.3: {}
 
-  interval-tree-1d@1.0.4:
-    dependencies:
-      binary-search-bounds: 2.0.5
-
   iota-array@1.0.0: {}
 
   is-buffer@1.1.6: {}
@@ -2091,8 +2014,6 @@ snapshots:
   isarray@1.0.0: {}
 
   isarray@2.0.5: {}
-
-  isoformat@0.2.1: {}
 
   isomorphic-ws@4.0.1(ws@5.2.4):
     dependencies:
