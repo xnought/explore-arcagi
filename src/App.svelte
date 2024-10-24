@@ -101,6 +101,8 @@
 				{/each}
 			{/if}
 		</div>
+	{:else}
+		Loading...
 	{/if}
 </main>
 {#if entries}
