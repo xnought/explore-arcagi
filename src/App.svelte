@@ -3,6 +3,7 @@
 	import { FalconVis, DuckDB } from "falcon-vis";
 	import Histogram from "./lib/Histogram.svelte";
 	import ArcData from "./lib/ArcData.svelte";
+	import Header from "./lib/Header.svelte";
 
 	let falcon;
 	let totalCountValue = undefined;
@@ -52,6 +53,7 @@
 	}
 </script>
 
+<Header />
 <main style="display: flex; gap: 10px;">
 	{#if falcon}
 		<div>
