@@ -1,6 +1,6 @@
 # Explore ARC AGI
 
-Live site: xnought.github.io/explore-arcagi/
+Live site: https://xnought.github.io/explore-arcagi/
 
 Using some complexity metrics, filter and view the ARC AGI dataset https://arcprize.org/
 
